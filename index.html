@@ -16,17 +16,17 @@
 <div id="vue-app">
       
   <h1>Event</h1>
-  <button @click="add(1)">Add Year</button>
+  <button @click.once="add(1)">Add Year</button>
   <button @click="sub(1)">Sub  Year</button>
   <button v-on:dblclick="add(10)">Add 10 Year</button>
   <button v-on:dblclick="sub(10)">Sub 10 Year</button>
-
-  <div id="canvas" v-on:mousemove="updateXY"> {{x}},{{y}}</div>
   <p>My age : {{age}}</p>
+  <div id="canvas" v-on:mousemove="updateXY"> {{x}},{{y}}</div>
+   <a v-on:click="click" href="http://www.thenetninja.co.uk">The Net Ninja</a>
     
 </div>
 
 
-<script src="app.js.js"></script>
+<script src="6_Event_Modifier.js"></script>
 </body>
 </html>
