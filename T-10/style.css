@@ -7,8 +7,10 @@
 span{
   background: red;
   display:inline-inline-block;
-  padding: 10px;
-  margin: 10px 0;
+  padding-top: 20px ;
+  padding-bottom: 5px;
+  margin: 20px 10px;
+  color:#fff
 }
 
 .available span{

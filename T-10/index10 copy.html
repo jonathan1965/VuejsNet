@@ -15,18 +15,27 @@
 
 <div id="vue-app">
       
-  <h1>Event</h1>
-  <button @click="add(1)">Add Year</button>
-  <button @click="sub(1)">Sub  Year</button>
-  <button v-on:dblclick="add(10)">Add 10 Year</button>
-  <button v-on:dblclick="sub(10)">Sub 10 Year</button>
+  <h1>Dynamic CSS</h1>
+   <h2>Example 1</h2>
+   <!-- <div v-on:click="available = !available" v-bind:class="{available:available}">
+       <span>Ryu</span>
+   </div> -->
+   <h2>Example 2</h2>
+   <div>
+  <button v-on:click="nearby=!nearby">Toggle nearby</button>
+  <button  v-on:click="available=!available">Toggle available</button>
+</div>
+<br>
+  <div v-bind:class="compClasses">
+      <span>Ryu</span>
+  </div>
 
-  <div id="canvas" v-on:mousemove="updateXY"> {{x}},{{y}}</div>
-  <p>My age : {{age}}</p>
-    
+
+
+
+
 </div>
 
-
-<script src="app.js.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
